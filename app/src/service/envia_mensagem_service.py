@@ -8,6 +8,7 @@ from self import self
 class SQSService:
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
+
     def __init__(self):
         if os.environ.get('ENVIRONMENT', 'LOCAL') == "LOCAL":
             logging.info("Inicio do envio da mensagem em localStack...")
